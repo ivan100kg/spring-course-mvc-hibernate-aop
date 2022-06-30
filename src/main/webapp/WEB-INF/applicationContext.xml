@@ -14,28 +14,28 @@
 		http://www.springframework.org/schema/tx
 		http://www.springframework.org/schema/tx/spring-tx.xsd">
 
-    <context:component-scan base-package="io.github.ivan100kg.spring.mvc_hibernate_aop" />
+    <context:component-scan base-package="io.github.ivan100kg.spring.mvc_hibernate_aop"/>
 
     <mvc:annotation-driven/>
 
     <bean
             class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/views/" />
-        <property name="suffix" value=".jsp" />
+        <property name="prefix" value="/WEB-INF/views/"/>
+        <property name="suffix" value=".jsp"/>
     </bean>
 
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
           destroy-method="close">
-        <property name="driverClass" value="org.postgresql.Driver" />
-        <property name="jdbcUrl" value="jdbc:postgresql://localhost:5432/my_db" />
-        <property name="user" value="bestuser" />
-        <property name="password" value="bestuser" />
+        <property name="driverClass" value="org.postgresql.Driver"/>
+        <property name="jdbcUrl" value="jdbc:postgresql://localhost:5432/my_db"/>
+        <property name="user" value="bestuser"/>
+        <property name="password" value="bestuser"/>
     </bean>
 
     <bean id="sessionFactory"
           class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
-        <property name="dataSource" ref="dataSource" />
-        <property name="packagesToScan" value="io.github.ivan100kg.spring.mvc_hibernate_aop.entity" />
+        <property name="dataSource" ref="dataSource"/>
+        <property name="packagesToScan" value="io.github.ivan100kg.spring.mvc_hibernate_aop.entity"/>
         <property name="hibernateProperties">
             <props>
                 <prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</prop>
@@ -49,7 +49,7 @@
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
 
-    <tx:annotation-driven transaction-manager="transactionManager" />
+    <tx:annotation-driven transaction-manager="transactionManager"/>
 
 
 </beans>
