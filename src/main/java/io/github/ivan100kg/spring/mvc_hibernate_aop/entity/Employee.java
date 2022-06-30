@@ -2,6 +2,7 @@ package io.github.ivan100kg.spring.mvc_hibernate_aop.entity;
 
 import jakarta.persistence.*;
 
+
 @Entity
 @Table(name = "employees")
 public class Employee {
@@ -9,7 +10,6 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
     private int id;
-
     @Column
     private String name;
     @Column
