@@ -9,14 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7b3bb16-7757-4120-9df7-5f4c2128e694" name="Changes" comment="Add all-employees.jsp">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/ivan100kg/spring/mvc_hibernate_aop/dao/EmployeeDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ivan100kg/spring/mvc_hibernate_aop/dao/EmployeeDAOImpl.java" afterDir="false" />
+    <list default="true" id="d7b3bb16-7757-4120-9df7-5f4c2128e694" name="Changes" comment="Fix Employee.java">
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/ivan100kg/spring/mvc_hibernate_aop/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ivan100kg/spring/mvc_hibernate_aop/entity/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -351,7 +345,7 @@
       <workItem from="1656491523774" duration="24000" />
       <workItem from="1656520390841" duration="3495000" />
       <workItem from="1656568598388" duration="5151000" />
-      <workItem from="1656593678520" duration="3578000" />
+      <workItem from="1656593678520" duration="4047000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1656520534564</created>
@@ -402,7 +396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656597052207</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Configure project">
+      <created>1656597410498</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1656597410498</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,7 +429,9 @@
     <MESSAGE value="Fix applicationContext.xml" />
     <MESSAGE value="Update EmployeeDAOImpl.java" />
     <MESSAGE value="Add all-employees.jsp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add all-employees.jsp" />
+    <MESSAGE value="Configure project" />
+    <MESSAGE value="Fix Employee.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix Employee.java" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

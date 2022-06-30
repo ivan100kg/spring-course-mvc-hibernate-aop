@@ -1,6 +1,7 @@
 package io.github.ivan100kg.spring.mvc_hibernate_aop.entity;
 
 import jakarta.persistence.*;
+//import javax.persistence.*;
 
 
 @Entity
@@ -8,15 +9,19 @@ import jakarta.persistence.*;
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column
+    @Column(name = "id")
     private int id;
-    @Column
+
+    @Column(name = "name")
     private String name;
-    @Column
+
+    @Column(name = "surname")
     private String surname;
-    @Column
+
+    @Column(name = "department")
     private String department;
-    @Column
+
+    @Column(name = "salary")
     private int salary;
 
     public Employee() {
@@ -67,5 +72,16 @@ public class Employee {
 
     public void setSalary(int salary) {
         this.salary = salary;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", department='" + department + '\'' +
+                ", salary=" + salary +
+                '}';
     }
 }
