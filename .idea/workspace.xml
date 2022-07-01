@@ -9,8 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7b3bb16-7757-4120-9df7-5f4c2128e694" name="Changes" comment="Fix Employee.java">
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/ivan100kg/spring/mvc_hibernate_aop/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ivan100kg/spring/mvc_hibernate_aop/entity/Employee.java" afterDir="false" />
+    <list default="true" id="d7b3bb16-7757-4120-9df7-5f4c2128e694" name="Changes" comment="Add new methods to MyController">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/ivan100kg/spring/mvc_hibernate_aop/controller/MyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ivan100kg/spring/mvc_hibernate_aop/controller/MyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/ivan100kg/spring/mvc_hibernate_aop/dao/EmployeeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ivan100kg/spring/mvc_hibernate_aop/dao/EmployeeDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/ivan100kg/spring/mvc_hibernate_aop/dao/EmployeeDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ivan100kg/spring/mvc_hibernate_aop/dao/EmployeeDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/ivan100kg/spring/mvc_hibernate_aop/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ivan100kg/spring/mvc_hibernate_aop/service/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/ivan100kg/spring/mvc_hibernate_aop/service/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ivan100kg/spring/mvc_hibernate_aop/service/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/all-employees.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/all-employees.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/employee-info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/employee-info.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,24 +52,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/ivan1/IdeaProjects/spring_course_mvc_hibernate_aop",
-    "project.structure.last.edited": "Problems",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.35632184",
-    "settings.editor.selected.configurable": "SQL Dialects",
-    "spring.configuration.checksum": "992eb71dc1a11a9aade170cf556d7035"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ivan1/IdeaProjects/spring_course_mvc_hibernate_aop&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.35632184&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;SQL Dialects&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;992eb71dc1a11a9aade170cf556d7035&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9">
     <configuration name="Tomcat 10" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.0.22" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -345,7 +352,9 @@
       <workItem from="1656491523774" duration="24000" />
       <workItem from="1656520390841" duration="3495000" />
       <workItem from="1656568598388" duration="5151000" />
-      <workItem from="1656593678520" duration="4047000" />
+      <workItem from="1656593678520" duration="6573000" />
+      <workItem from="1656658086282" duration="10343000" />
+      <workItem from="1656675315372" duration="1362000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1656520534564</created>
@@ -403,7 +412,84 @@
       <option name="project" value="LOCAL" />
       <updated>1656597410498</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Fix Employee.java">
+      <created>1656597862008</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1656597862008</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add EmployeeService.java">
+      <created>1656660202837</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1656660202837</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add EmployeeServiceImpl.java">
+      <created>1656660217949</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1656660217949</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fix pom.xml">
+      <created>1656660232673</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1656660232673</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add Service to Project structure">
+      <created>1656660264445</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1656660264445</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Fix applicationContext.xml">
+      <created>1656660284719</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1656660284719</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Add employee-info.jsp">
+      <created>1656664918807</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1656664918808</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Add to Service new method">
+      <created>1656664961615</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1656664961615</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Add to DAO new method">
+      <created>1656664973618</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1656664973618</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Add button to all-employees.jsp">
+      <created>1656665000760</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1656665000760</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Add new methods to MyController">
+      <created>1656665014515</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1656665014515</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,12 +512,21 @@
     <MESSAGE value="Add file EmployeeDAO.java" />
     <MESSAGE value="Add file EmployeeDAOImpl.java" />
     <MESSAGE value="Add file MyController.java" />
-    <MESSAGE value="Fix applicationContext.xml" />
     <MESSAGE value="Update EmployeeDAOImpl.java" />
     <MESSAGE value="Add all-employees.jsp" />
     <MESSAGE value="Configure project" />
     <MESSAGE value="Fix Employee.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix Employee.java" />
+    <MESSAGE value="Add EmployeeService.java" />
+    <MESSAGE value="Add EmployeeServiceImpl.java" />
+    <MESSAGE value="Fix pom.xml" />
+    <MESSAGE value="Add Service to Project structure" />
+    <MESSAGE value="Fix applicationContext.xml" />
+    <MESSAGE value="Add employee-info.jsp" />
+    <MESSAGE value="Add to Service new method" />
+    <MESSAGE value="Add to DAO new method" />
+    <MESSAGE value="Add button to all-employees.jsp" />
+    <MESSAGE value="Add new methods to MyController" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new methods to MyController" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
