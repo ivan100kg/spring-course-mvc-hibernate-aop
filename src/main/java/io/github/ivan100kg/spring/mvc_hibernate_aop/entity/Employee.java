@@ -1,7 +1,7 @@
 package io.github.ivan100kg.spring.mvc_hibernate_aop.entity;
 
-import jakarta.persistence.*;
-//import javax.persistence.*;
+//import jakarta.persistence.*;
+import javax.persistence.*;
 
 
 @Entity
