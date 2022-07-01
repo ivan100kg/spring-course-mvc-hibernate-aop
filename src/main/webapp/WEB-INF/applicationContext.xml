@@ -38,7 +38,7 @@
         <property name="packagesToScan" value="io.github.ivan100kg.spring.mvc_hibernate_aop.entity"/>
         <property name="hibernateProperties">
             <props>
-                <prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</prop>
+                <prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQL95Dialect</prop>
                 <prop key="hibernate.show_sql">true</prop>
             </props>
         </property>
