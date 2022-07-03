@@ -9,15 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7b3bb16-7757-4120-9df7-5f4c2128e694" name="Changes" comment="Add new methods to MyController">
+    <list default="true" id="d7b3bb16-7757-4120-9df7-5f4c2128e694" name="Changes" comment="Add Aspect class">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/ivan100kg/spring/mvc_hibernate_aop/controller/MyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ivan100kg/spring/mvc_hibernate_aop/controller/MyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/ivan100kg/spring/mvc_hibernate_aop/dao/EmployeeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ivan100kg/spring/mvc_hibernate_aop/dao/EmployeeDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/ivan100kg/spring/mvc_hibernate_aop/dao/EmployeeDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ivan100kg/spring/mvc_hibernate_aop/dao/EmployeeDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/ivan100kg/spring/mvc_hibernate_aop/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ivan100kg/spring/mvc_hibernate_aop/service/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/ivan100kg/spring/mvc_hibernate_aop/service/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ivan100kg/spring/mvc_hibernate_aop/service/EmployeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/all-employees.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/all-employees.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/employee-info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/employee-info.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -52,24 +47,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ivan1/IdeaProjects/spring_course_mvc_hibernate_aop&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.35632184&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;SQL Dialects&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;992eb71dc1a11a9aade170cf556d7035&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/ivan1/IdeaProjects/spring_course_mvc_hibernate_aop",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.35632184",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "spring.configuration.checksum": "992eb71dc1a11a9aade170cf556d7035"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9">
     <configuration name="Tomcat 10" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.0.22" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -354,7 +350,8 @@
       <workItem from="1656568598388" duration="5151000" />
       <workItem from="1656593678520" duration="6573000" />
       <workItem from="1656658086282" duration="10343000" />
-      <workItem from="1656675315372" duration="1362000" />
+      <workItem from="1656675315372" duration="1734000" />
+      <workItem from="1656829706650" duration="4454000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1656520534564</created>
@@ -489,7 +486,77 @@
       <option name="project" value="LOCAL" />
       <updated>1656665014515</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Add method to MyController">
+      <created>1656676857259</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1656676857259</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Update DAO">
+      <created>1656676878536</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1656676878536</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Update Service">
+      <created>1656676888827</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1656676888827</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Update Views for Update functional">
+      <created>1656676916449</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1656676916449</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Update Views for Delete functional">
+      <created>1656831521894</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1656831521894</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Update DAO for Delete functional">
+      <created>1656831536112</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1656831536112</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Update Service for Delete functional">
+      <created>1656831553810</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1656831553810</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Add delete method to MyController">
+      <created>1656831592238</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1656831592238</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Configure AOP">
+      <created>1656833549985</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1656833549985</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Add Aspect class">
+      <created>1656833568872</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1656833568872</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -507,10 +574,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial commit" />
-    <MESSAGE value="Add file Employee.java" />
-    <MESSAGE value="Add file EmployeeDAO.java" />
-    <MESSAGE value="Add file EmployeeDAOImpl.java" />
     <MESSAGE value="Add file MyController.java" />
     <MESSAGE value="Update EmployeeDAOImpl.java" />
     <MESSAGE value="Add all-employees.jsp" />
@@ -526,7 +589,17 @@
     <MESSAGE value="Add to DAO new method" />
     <MESSAGE value="Add button to all-employees.jsp" />
     <MESSAGE value="Add new methods to MyController" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new methods to MyController" />
+    <MESSAGE value="Add method to MyController" />
+    <MESSAGE value="Update DAO" />
+    <MESSAGE value="Update Service" />
+    <MESSAGE value="Update Views for Update functional" />
+    <MESSAGE value="Update Views for Delete functional" />
+    <MESSAGE value="Update DAO for Delete functional" />
+    <MESSAGE value="Update Service for Delete functional" />
+    <MESSAGE value="Add delete method to MyController" />
+    <MESSAGE value="Configure AOP" />
+    <MESSAGE value="Add Aspect class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Aspect class" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
